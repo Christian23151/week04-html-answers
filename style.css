@@ -1,67 +1,170 @@
-body {
-  font-family: "Arial", sans-serif;
+/* Global Styles */
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #001f3d, #040c2e);
-  color: white;
-  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  background-color: #000;
-  background-size: 100%;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-h1,
-h2,
-h3 {
+header {
   text-align: center;
-  color: #e0e0e0;
+  background-color: #2c3e50;
+  color: white;
+  padding: 30px 0;
 }
 
-p {
-  max-width: 800px;
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* Main Section */
+main {
   margin: 20px auto;
-  text-align: justify;
-  font-size: 1.1rem;
+  max-width: 1200px;
 }
 
-ol {
-  padding-left: 20px;
+section {
+  margin-bottom: 40px;
 }
 
-ul {
-  padding-left: 40px;
+section h2 {
+  font-size: 2.5em;
+  color: #3498db;
+  margin-bottom: 10px;
 }
 
+section h3 {
+  font-size: 2em;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Centering the Heading */
+h3.centered {
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+ul, ol {
+  margin-left: 20px;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  color: #2c3e50;
+}
+
+/* Image */
 img {
+  display: block;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   height: auto;
-  border: 4px solid #fff;
-  display: block;
-  margin: 20px auto;
 }
 
+/* Quotes */
+p {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* Footer */
 footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  margin-top: 40px;
 }
 
 footer p {
-  margin: 0;
-  color: #ddd;
+  font-size: 1.1em;
 }
 
-footer a {
-  color: #64aaff;
+footer ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: #ecf0f1;
   text-decoration: none;
-  padding: 0 10px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
-footer a:hover {
-  text-decoration: underline;
+footer ul li a:hover {
+  color: #3498db;
+}
+
+/* Footer Contact Section */
+footer p a {
+  color: #ecf0f1;
+}
+
+/* Add a hover effect for the footer links */
+footer ul li a:hover {
+  color: #3498db;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  section h2 {
+    font-size: 2em;
+  }
+
+  section h3 {
+    font-size: 1.8em;
+  }
+
+  img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  footer ul li {
+    display: block;
+    margin: 10px 0;
+  }
 }
